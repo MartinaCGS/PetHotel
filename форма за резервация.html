@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML форми</title>
+</head>
+<body>
+  
+    <fieldset>
+        <legend>Форма за резервация на хотел</legend>
+        
+        <style>
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .navbar {
+              overflow: hidden;
+              background-color: white;
+            }
+            
+            
+            .dropdown {
+              float: left;
+              overflow: hidden;
+            }
+            
+            .dropdown .dropbtn {
+              font-size: 16px;  
+              border: none;
+              outline: none;
+              color:black;
+              padding: 14px 16px;
+              background-color: inherit;
+              font-family: inherit;
+              margin: 0;
+            }
+            
+            .navbar a:hover, .dropdown:hover .dropbtn {
+              background-color: white;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              float: none;
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+            
+            
+            
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            </style>
+            </head>
+            <body style="background-color:white;">
+            
+            <div class="navbar">
+             
+              <div class="dropdown">
+                <button class="dropbtn">Избор на хотел:
+                </button>
+                <input list='spisak' />
+                    <datalist id='spisak'>
+                        <option value='Хотел Мър и мяу,гр.Симитли'></option>
+                        <option value='Къща за гости Борова гора,Варна'></option>
+                        <option value='Хотел белият Елен,гр.Царевец'></option>
+                        <option value='Еко хотел Павлов,гр.Пловдив'></option>
+                        <option value='Зимна панорама,гр.София'></option>
+                    </datalist>
+              </div> 
+            </div>
+            
+
+            
+        От дата:
+        <input type="date" name='begin_date'><br><br>
+        До дата:
+        <input type="date"name='end_date'><br><br>
+        Вид домашен любимец:
+        <input type="radio" name='Pet' value='dog'>Куче
+        <input type="radio" name='Pet' value='цат'>Котка<br><br>
+        
+        Време на престой: <input type="time" name='thetime'><br><br>
+        
+    </fieldset>
+   
+    
+    <!-- <br><input list='spisak' />
+    <datalist id='spisak'>
+        <option value='Хотел Мър и мяу,гр.Симитли'></option>
+        <option value='Къща за гости Борова гора,Варна'></option>
+        <option value='Хотел белият Елен,гр.Царевец'></option>
+        <option value='Еко хотел Павлов,гр.Пловдив'></option>
+        <option value='Зимна панорама,гр.София'></option>
+    </datalist><br><br><br><br> -->
+<!--     
+    <input type='range' name='price' min='0' max='1000' />
+    <output name="priceout" for='price'></output><br> -->
+</form>
+</body>
+</html>
